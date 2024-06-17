@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Inter;
+    src: url(Inter-VariableFont_slnt\,wght.ttf);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inter;
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: hsl(0, 0%, 12%);
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.city {
+    text-align: center;
+    font-size: 15px;
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 20px;
+}
+
+.desc {
+    text-align: center;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.links {
+    width: 100%;
+}
+
+.link {
+    width: 100%;
+    background-color: hsl(0, 0%, 20%);
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+}
+
+.link:focus {
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+}
+
