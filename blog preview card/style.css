@@ -1,0 +1,85 @@
+@font-face {
+    font-family: figTree;
+    src: url("Figtree-VariableFont_wght.ttf");
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: figTree;
+    background-color: hsl(47, 88%, 63%);
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 400px;
+    padding: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    border: 2px solid hsl(0, 0%, 7%);
+    box-shadow: 6px 6px hsl(0, 0%, 7%);
+}
+
+.illustration-img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.learning-state {
+    margin-bottom: 20px;
+    width: fit-content;
+    font-weight: bold;
+    background-color: hsl(47, 88%, 63%);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.publish-date {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.lesson-link {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.lesson-link:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+.lesson-desc {
+    color: hsl(0, 0%, 50%);
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.blog-artist {
+    display: flex;
+    align-items: center;
+}
+
+.artist-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.artist-name {
+    font-weight: bold;
+}
