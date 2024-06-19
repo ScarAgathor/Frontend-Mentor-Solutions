@@ -1,0 +1,148 @@
+@font-face {
+    font-family: workSans;
+    src: url("WorkSans-VariableFont_wght.ttf");
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: hsl(275, 100%, 97%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: workSans;
+}
+
+.faq-container {
+    background-color: hsl(0, 0%, 100%);
+    width: 550px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 6px 15px hsla(293, 16%, 49%, 0.45);
+}
+
+.faq-intro {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.faq-clickable {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.faq-clickable:focus .question {
+    color: hsl(281, 83%, 54%);
+}
+
+.icon-state {
+    align-self: flex-start;
+}
+
+.question {
+    color: hsl(292, 42%, 14%);
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.question:hover, .question:focus {
+    color: hsl(281, 83%, 54%);
+}
+
+.answer {
+    color: hsl(292, 16%, 49%);
+    line-height: 20px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    display: none;
+    
+}
+
+.line {
+    width: 100%;
+    border: 1px solid hsla(293, 16%, 49%, 0.183);
+    margin-bottom: 30px;
+}
+
+@keyframes rotate-front {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotate-back {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    75% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    75% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
