@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Summary Component</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="component-container">
+        <div class="result-container inners">
+            <p class="result-title">Your Result</p>
+            <div class="result-circle">
+                <h1 class="result">7</h1>
+                <p class="total-text">of 100</p>
+            </div>
+            <h2 class="result-rating">Great</h2>
+            <p class="result-rating-desc">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+
+        <div class="summary-container inners">
+            <h3 class="summary-title">Summary</h3>
+            <div class="summary-box reaction-box">
+                <div class="criteria-title">
+                    <img class="criteria-img" src="" alt="">
+                    <p class="category" id="reaction"></p> 
+                </div>
+                <p class="criteria-score"><span id="reaction-score" class="score"></span> / 100</p> 
+            </div>
+            <div class="summary-box memory-box">
+                <div class="criteria-title">
+                    <img class="criteria-img" src="" alt="">
+                    <p class="category" id="memory"></p> 
+                </div>
+                <p class="criteria-score"><span id="memory-score" class="score"></span> / 100</p> 
+            </div>
+            <div class="summary-box verbal-box">
+                <div class="criteria-title">
+                    <img class="criteria-img" src="" alt="">
+                    <p class="category" id="verbal"></p> 
+                </div>
+                <p class="criteria-score"><span id="verbal-score" class="score"></span> / 100</p> 
+            </div>
+            <div class="summary-box visual-box">
+                <div class="criteria-title">
+                    <img class="criteria-img" src="" alt="">
+                    <p class="category" id="visual"></p> 
+                </div>
+                <p class="criteria-score"><span id="visual-score" class="score"></span> / 100</p> 
+            </div>
+            <button class="continue">Continue</button>
+        </div>
+    </div>
+</body>
+</html>

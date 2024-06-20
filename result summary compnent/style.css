@@ -1,0 +1,179 @@
+@font-face {
+    font-family: hanken;
+    src: url("HankenGrotesk-VariableFont_wght.ttf");
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: hanken;
+    overflow: scroll;
+}
+
+.component-container {
+    width: 550px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 5px hsl(221, 100%, 96%);
+    display: flex;
+}
+
+.inners {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    padding: 30px;
+}
+
+.result-container {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.result-title {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: hsl(241, 100%, 89%);
+}
+
+.result-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.result {
+    font-size: 50px;
+}
+
+.total-text {
+    margin-top: -2px;
+    font-size: 13px;
+    color: hsla(241, 100%, 89%, 0.61);
+    font-weight: bold;
+}
+
+.result-rating {
+    margin-bottom: 20px;
+}
+
+.result-rating-desc {
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.summary-container {
+    align-items: flex-start;
+}
+
+.summary-title {
+    color: hsl(224, 30%, 27%);
+    margin-bottom: 30px;
+}
+
+.summary-box {
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.criteria-title {
+    display: flex;
+}
+
+.criteria-img {
+    margin-right: 10px;
+    width: 15px;
+}
+
+.criteria-score {
+    color: hsla(224, 30%, 27%, 0.489);
+}
+
+.score {
+    color: hsl(224, 30%, 27%);
+}
+
+.reaction-box {
+    background-color: hsla(0, 100%, 67%, 0.08);
+}
+
+#reaction {
+    color: hsl(0, 100%, 67%)
+}
+
+.memory-box {
+    background-color: hsla(39, 100%, 56%, 0.08);
+}
+
+#memory {
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal-box {
+    background-color: hsla(166, 100%, 37%, 0.08);
+}
+
+#verbal {
+    color: hsl(166, 100%, 37%);
+}
+
+.visual-box {
+    background-color: hsla(234, 85%, 45%, 0.08);
+}
+
+#visual {
+    color: hsl(234, 85%, 45%);
+}
+
+.continue {
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    height: 40px;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.continue:hover, .continue:focus {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (max-width: 700px) {
+    .component-container {
+        flex-direction: column;
+        width: 275px;
+        box-shadow: 5px 5px 5px hsl(221, 100%, 96%), -5px 0px 5px hsl(221, 100%, 96%);
+    }
+
+    .inners {
+        width: 100%;
+    }
+}
