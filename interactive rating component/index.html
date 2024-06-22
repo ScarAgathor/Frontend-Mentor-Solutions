@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Rating Component</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <article class="rating-state component">
+        <picture class="icon-container">
+            <img src="icon-star.svg" alt="an orange star" class="rating-icon">
+        </picture>
+        
+        <p class="card-title">How did we do?</p>
+        <p class="card-desc">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <div class="rating-buttons">
+            <div class="rating" tabindex="0">1</div>
+            <div class="rating" tabindex="0">2</div>
+            <div class="rating" tabindex="0">3</div>
+            <div class="rating" tabindex="0">4</div>
+            <div class="rating" tabindex="0">5</div>
+        </div>
+        <button class="button">SUBMIT</button>
+    </article>
+
+    <article class="thank-state component" style="display: none;">
+        <img src="illustration-thank-you.svg" alt="an illustration" class="thank-icon">
+        <div class="rating-message">You selected <span class="selected-rating"></span> out of 5</div>
+        <p class="card-title thank-msg">Thank you!</p>
+        <p class="card-desc thank-desc">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </article>
+</body>
+</html>

@@ -1,0 +1,131 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --icon-bc: hsl(210, 17%, 21%);
+
+    --font: overpass;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: var(--font);
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.component {
+    background-color: var(--Dark-Blue);
+    width: 450px;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.icon-container {
+    background-color: var(--icon-bc);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.rating-icon {
+    width: 20px;
+}
+
+.card-title {
+    color: var(--White);
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.card-desc {
+    color: var(--Light-Grey);
+    line-height: 25px;
+}
+
+.rating-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rating {
+    background-color: var(--icon-bc);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Light-Grey);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.rating:hover, .rating:focus {
+    color: var(--Very-Dark-Blue);
+    background-color: var(--White);
+}
+
+.button {
+    background-color: var(--Orange);
+    color: var(--Very-Dark-Blue);
+    border: none;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.button:hover, .button:focus {
+    background-color: var(--White);
+}
+
+.thank-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-icon {
+    margin-bottom: 40px;
+}
+
+.rating-message {
+    color: var(--Orange);
+    font-size: 14px;
+    background-color: var(--icon-bc);
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.thank-desc {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.orange, .orange:focus{
+    color: var(--Very-Dark-Blue);
+    background-color: var(--Orange);
+}
