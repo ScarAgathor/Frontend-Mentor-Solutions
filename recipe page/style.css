@@ -1,0 +1,140 @@
+:root{
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-Raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+
+    --line: solid 0.05rem var(--light-grey)
+}
+
+@font-face{
+    font-family: outfit;
+    src: url(fonts/Outfit-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: youngSerif;
+    src: url(fonts/YoungSerif-Regular.ttf);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--eggshell);
+    color: var(--dark-charcoal);
+}
+
+.recipe-page {
+    min-width: 500px;
+    max-width: 600px;
+    background-color: var(--white);
+    padding: 3.2rem;
+    margin: 5rem;
+    border-radius: 1.2rem;
+}
+
+.recipe-section {
+    margin-bottom: 1.5rem;
+}
+
+.line-section {
+    padding-bottom: 1.5rem;
+    border-bottom: var(--line);
+}
+
+.recipe-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 0.6rem;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.recipe-name {
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    font-family: youngSerif;
+}
+
+.sub-heading {
+    font-family: youngSerif;
+    font-size: 1.5rem;
+    color: var(--nutmeg);
+    margin-bottom: 1.2rem;
+}
+
+.recipe-text {
+    font-family: "Outfit";
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--wenge-brown);
+    text-wrap: wrap;
+}
+
+.recipe-text-bold {
+    font-weight: 600;
+    font-family: outfit;
+}
+
+.preparation-section {
+    background-color: hsl(330, 100%, 98%);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.preparation-title {
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 10px;
+    font-family: Outfit;
+    font-size: 1.5rem;
+}
+
+.recipe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: square;
+    list-style-position: inside;
+    padding-left: 0.5rem;
+}
+
+.recipe-list-numbers {
+    list-style-type: decimal;
+}
+
+.recipe-list-numbers li::marker {
+    font-weight: 600;
+    color: var(--nutmeg);
+}
+
+.nutrition {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--line);
+    padding: 0.5rem 1rem;  
+}
+
+.nutrition:last-of-type {
+    border-bottom: none;
+}
+
+.nutrition span {
+    width: 50%;
+}
+
+.recipe-text-bold-x {
+    color: hsl(14, 45%, 36%);
+}
