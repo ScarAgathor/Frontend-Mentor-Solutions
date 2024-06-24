@@ -1,0 +1,112 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+
+    --line: solid 0.05rem var(--light-pink);
+}
+
+@font-face {
+    font-family: workSans;
+    src: url("WorkSans-VariableFont_wght.ttf");
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: workSans;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 10%;
+    background-image: url("images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--light-pink);
+}
+
+.faq {
+    width: 600px;
+    max-width: 38rem;
+    background-color: var(--white);
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 2px 6px 15px hsla(293, 16%, 49%, 0.45);
+}
+
+.faq-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.faq-section {
+    border-bottom: var(--line);
+    margin-bottom: 30px;
+}
+
+.faq-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: -10px;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.faq-question-text {
+    color: hsl(292, 42%, 14%);
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.faq-question:focus .faq-question-text, .faq-question-text:hover{
+    color: hsl(281, 83%, 54%);
+}
+
+.icon {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.faq-answer {
+    color: hsl(292, 16%, 49%);
+    line-height: 20px;
+    margin-bottom: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+@keyframes rotate-front {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotate-back {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-180deg);
+    }
+}
