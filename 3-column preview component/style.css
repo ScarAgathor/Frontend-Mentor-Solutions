@@ -1,0 +1,89 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white : hsla(0, 0%, 100%, 0.75);
+    --very-light-gray : hsl(0, 0%, 95%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html, body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--very-light-gray);
+    font-family: 'Lexend Deca';
+}
+
+article {
+    display: grid;
+    width: max-content;
+    /*Needs more work for responsiveness*/
+
+    grid-template-columns: repeat(auto-fit, minmax(307px, 1fr));
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+section {
+    padding: 45px;
+    min-width: 307px;
+}
+
+.sedan-section {
+    --bg: var(--bright-orange);
+    background-color: var(--bg);
+}
+
+.suv-section {
+    --bg: var(--dark-cyan);
+    background-color: var(--bg);
+}
+
+.luxury-section {
+    --bg: var(--very-dark-cyan);
+    background-color: var(--bg);
+}
+
+img {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display';
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--very-light-gray);
+}
+
+p {
+    color: var(--transparent-white);
+    font-size: 15px;
+    line-height: 25px;
+
+    /*make this calculate itself*/
+    margin-bottom: 50px;
+}
+
+button {
+    border-radius:320px;
+    font-size: 15px;
+    height: 48px;
+    width: 146px;
+    color: var(--bg);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--bg);
+    border: 1px solid white;
+    color: white;
+}
