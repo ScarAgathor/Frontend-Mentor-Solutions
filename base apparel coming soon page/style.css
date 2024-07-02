@@ -1,0 +1,191 @@
+:root {
+    --linear: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --grayish-red: hsl(0, 6%, 24%);
+    --white: hsl(0, 0%, 86%);
+
+    --body-w: 100%;
+}
+
+*, *::before, **::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Josefin Sans;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "box1 box2"
+    "box3 box2";
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding: calc(4 /100 * var(--body-w)) 0;
+    margin-left: calc(25 /100 * var(--body-w));
+    grid-area: box1;
+
+}
+
+header img {
+    max-width: 158px;
+    width: 10vw;
+    min-width: 100px;
+}
+
+picture {
+    grid-area: box2;
+    height: 100%;
+    justify-self: flex-end;
+}
+
+picture img {
+    height: 100%;
+    max-width: 800px;
+    object-fit: cover;
+    width: 100%;
+}
+
+section {
+    grid-area: box3;
+    margin-left: calc(25 /100 * var(--body-w));
+    max-width: 451px;
+    min-width: 311px;
+    width: 50vw;
+}
+
+p {
+    color: var(--desaturated-red);
+    margin: 0;
+}
+
+.section_title {
+    font-size: 64px;
+    letter-spacing: 17.32px;
+    font-weight: 300;
+}
+
+.section_title-bold {
+    font-size: 64px;
+    letter-spacing: 17.32px;
+    color: var(--grayish-red);
+    font-weight: 600;
+}
+
+.section_text {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+    border: 1px solid var(--desaturated-red);
+    border-radius: 28px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+form input {
+    background: none;
+    border: none;
+    margin-left: 25px;
+    color: var(--desaturated-red);
+    outline: none;
+    width: 100%;
+}
+
+form input:focus {
+    color: var(--grayish-red);
+}
+
+.error-icon {
+    position: absolute;
+    right: 90px;
+    opacity: 0;
+}
+
+form button {
+    background: var(--linear);
+    border: none;
+    width: 100px;
+    height: 56px;
+    border-radius: 28px;
+    box-shadow: 0px 4px 30px var(--soft-red);
+    cursor: pointer;
+    position: absolute;
+    right: -25px;
+}
+
+form button:hover {
+    background: #b08b8b;
+    box-shadow: none;
+}
+
+.error {
+    color: var(--soft-red);
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+    opacity: 0;
+}
+
+@media (max-width: 900px) {
+    main {
+        align-items: center;
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box3"
+    }
+
+    header {
+        margin-left: 50px;
+    }
+
+    picture {
+        width: 100%;
+    }
+
+    section {
+ 
+        margin: 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section_title {
+        font-size: 40px;
+        letter-spacing: 10.83px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .section_title-bold {
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: 10.83px;
+        text-align: center;
+    }
+
+    .section_text {
+        text-align: center;
+    }
+}
