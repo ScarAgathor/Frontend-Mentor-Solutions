@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal_head">
+            <img src="icon-success-check.svg" alt="">
+            <p>Message Sent!</p>
+        </div>
+        <p class="modal_text">
+            Thanks for completing the form. We'll be in touch soon!
+        </p>
+    </div>
+
+    <form>
+        <h1>Contact Us</h1>
+
+        <div class="container name_container">
+            <div class="name_container-input">
+                <label class="label">First Name <span class="asterisk">*</span></label>
+                <input type="text" class="input">
+                <p class="error-msg">This field is required</p>
+            </div>
+            <div class="name_container-input">
+                <label class="label">Last Name<span class="asterisk">*</span></label>
+                <input type="text" class="input">
+                <p class="error-msg">This field is required</p>
+            </div>
+        </div>
+
+        <div class="container email_container">
+            <label for="email" class="label">Email Address <span class="asterisk">*</span></label>
+            <input type="text" class="input" name="email">
+            <p class="error-msg">Please enter a valid email address</p>
+        </div>
+
+        <div class="container">
+            <p class="label">Query Type <span class="asterisk">*</span></p>
+            <div class="query_container">
+                <label class="query" tabindex="0">
+                    <input type="radio" name="query" class="input"> General Enquiry
+                </label>
+                <label class="query" tabindex="0">
+                    <input type="radio" name="query" class="input"> Support request
+                </label>
+            </div>
+            <p class=" error-msg">Please select a query type</p>
+        </div>
+
+        <div class="container message_container">
+            <label class="label">Message <span class="asterisk">*</span></label>
+            <textarea class="input"></textarea>
+            <p class=" error-msg">This field is required</p>
+        </div>
+
+        <div class="container consent_container">
+            <div class="consent_msg">
+                <input type="checkbox">
+                <label class="label">I consent to being contacted by the team <span class="asterisk">*</span></label>
+            </div>
+            <p class="error-msg">To submit this form, please consent to being contacted</p>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
