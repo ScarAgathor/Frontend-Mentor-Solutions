@@ -1,0 +1,95 @@
+<!--Still need to work on responsiveness\
+Also the issue with the radio-buttons-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mortgage payment calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <main>
+        <section class="calculator_section">
+            <header>
+                <h1>Mortgage Calculator</h1>
+                <button class="clear_button" onclick="clearAll()">Clear All</button>
+            </header>
+
+            <form>
+                <div class="text_inputs">
+                    <div class="input_container-100">
+                        <p class="label">Mortgage Amount</p>
+                        <div class="input_container input_container-text">
+                            <div class="input_icon">£</div>
+                            <input type="text" class="text_input">
+                        </div>
+                        <p class="error_msg">This field is required</p>
+                    </div>
+            
+                    <div class="input_container-50">
+                        <p class="label">Mortgage Term</p>
+                        <div class="input_container input_container-text">
+                            <div class="input_icon">years</div>
+                            <input type="text" class="text_input">
+                        </div>
+                        <p class="error_msg">This field is required</p>
+                    </div>
+            
+                    <div class="input_container-50">
+                        <p class="label">Interest Rate</p>
+                        <div class="input_container input_container-text">
+                            <div class="input_icon">%</div>
+                            <input type="text" class="text_input">
+                        </div>
+                        <p class="error_msg">This field is required</p>
+                    </div>
+                </div>
+    
+                <div class="radio_inputs">
+                    <p class="label">Mortgage Type</p>
+                    <label class="input_container input_container-radio">
+                        <input type="radio" name="payment_type" class="radio_input">
+                        Repayment
+                    </label>
+                    <label class="input_container input_container-radio">
+                        <input type="radio" name="payment_type" class="radio_input">
+                        Interest Only
+                    </label>
+                    <p class="error_msg">This field is required</p>
+                </div>
+                
+                <button class="submit_button" type="submit"><img src="images/icon-calculator.svg" alt="">Calculate Repayments</button>
+            </form>
+        </section>
+
+        <section class="result_section">
+            <section class="result_section-empty">
+                <img src="images/illustration-empty.svg" alt="">
+                <p class="result_section-empty-heading">Results shown here</p>
+                <p class="result_section-empty-text">Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+            </section>
+
+            <section class="result_section-calculated">
+                <p class="result_section-calculated-heading">Your results</p>
+                <p class="result_section-calculated-text">Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
+
+                <div class="result_container">
+                    <div class="result_container-monthly">
+                        <p class="result_container-title">Your monthly repayments</p>
+                        <p class="monthly-result">£1979.74</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="result_container-monthly">
+                        <p class="result_container-title">Total you'll repay over the term</p>
+                        <p class="total-result">£539322.94</p>
+                    </div>
+                    
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
